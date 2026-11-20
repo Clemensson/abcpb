@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contribua | ABCPB</title>
+  <meta name="description" content="Contribua com a obra missionária da Associação Batista do Cariri Paraibano via PIX ou depósito.">
+  <link rel="icon" href="assets/img/logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800&family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body data-pagina="contribua">
+  <div id="topo"></div>
+
+  <main>
+    <section class="pagina-topo">
+      <div class="container">
+        <div class="migalhas"><a href="index.html">Início</a> / Contribua</div>
+        <h1>Contribua</h1>
+        <p>“Cada um contribua segundo propôs no seu coração; não com tristeza, ou por necessidade; porque Deus ama ao que dá com alegria.” 2 Coríntios 9.7</p>
+      </div>
+    </section>
+
+    <section class="secao">
+      <div class="container contribua-grade">
+        <div>
+          <div class="secao-titulo" style="margin-bottom:24px"><span class="sobretitulo">Sua oferta faz diferença</span><h2>Para onde vai sua contribuição</h2></div>
+          <div class="texto-corrido">
+            <p>As ofertas recebidas pela ABCPB são aplicadas nos projetos missionários, no apoio a igrejas e congregações em formação, na ação social e na realização de encontros e capacitações para as igrejas do Cariri.</p>
+            <p>Igrejas associadas também podem enviar sua contribuição cooperativa mensal pelos mesmos dados.</p>
+            <h3>Depois de contribuir</h3>
+            <p>Envie o comprovante pelo WhatsApp para que possamos registrar e agradecer sua oferta.</p>
+          </div>
+          <a class="btn btn-verde" id="link-whats-contribua" href="#" target="_blank" rel="noopener">Enviar comprovante pelo WhatsApp</a>
+        </div>
+
+        <div id="dados-contribuicao" style="display:grid;gap:24px">
+          <div class="caixa-pix">
+            <h3>PIX</h3>
+            <p style="font-size:14px;color:var(--texto-suave)">Chave <span id="pix-tipo"></span></p>
+            <div class="chave"><span id="pix-chave"></span><button class="btn-copiar" id="copiar-pix" type="button">Copiar</button></div>
+            <p style="font-size:14.5px"><strong>Favorecido:</strong> <span id="pix-favorecido"></span></p>
+          </div>
+          <div class="caixa-pix" style="border-top-color:var(--verde)">
+            <h3>Depósito / Transferência</h3>
+            <ul class="dados-bancarios">
+              <li><strong>Banco:</strong> <span id="banco-nome"></span></li>
+              <li><strong>Agência:</strong> <span id="banco-agencia"></span></li>
+              <li><strong>Conta:</strong> <span id="banco-conta"></span> (<span id="banco-tipo"></span>)</li>
+              <li><strong>Favorecido:</strong> <span id="banco-favorecido"></span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div id="rodape"></div>
+
+  <script src="dados/config.js"></script>
+  <script src="dados/noticias.js"></script>
+  <script src="dados/eventos.js"></script>
+  <script src="dados/igrejas.js"></script>
+  <script src="dados/missoes.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

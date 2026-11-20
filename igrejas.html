@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Igrejas Associadas | ABCPB</title>
+  <meta name="description" content="Encontre uma igreja batista no Cariri paraibano: endereços, pastores e horários de culto.">
+  <link rel="icon" href="assets/img/logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800&family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body data-pagina="igrejas">
+  <div id="topo"></div>
+
+  <main>
+    <section class="pagina-topo">
+      <div class="container">
+        <div class="migalhas"><a href="index.html">Início</a> / Igrejas</div>
+        <h1>Igrejas Associadas</h1>
+        <p>Encontre uma igreja batista perto de você no Cariri paraibano. Você é muito bem-vindo!</p>
+      </div>
+    </section>
+
+    <section class="secao">
+      <div class="container">
+        <div id="igrejas"></div>
+      </div>
+    </section>
+
+    <section class="faixa">
+      <div class="container">
+        <div>
+          <h2>Sua igreja quer fazer parte da ABCPB?</h2>
+          <p>Fale com a diretoria e saiba como sua igreja pode se associar e cooperar com a obra no Cariri.</p>
+        </div>
+        <a class="btn btn-primario" id="link-contato-igreja" href="#">Falar com a associação</a>
+      </div>
+    </section>
+  </main>
+
+  <div id="rodape"></div>
+
+  <script src="dados/config.js"></script>
+  <script src="dados/noticias.js"></script>
+  <script src="dados/eventos.js"></script>
+  <script src="dados/igrejas.js"></script>
+  <script src="dados/missoes.js"></script>
+  <script src="assets/js/main.js"></script>
+  <script>
+    (function () {
+      var a = document.getElementById("link-contato-igreja");
+      if (SITE.whatsapp) a.href = "https://wa.me/" + SITE.whatsapp + "?text=" + encodeURIComponent("Olá! Gostaria de saber como uma igreja pode se associar à ABCPB.");
+      else if (SITE.email) a.href = "mailto:" + SITE.email;
+    })();
+  </script>
+</body>
+</html>

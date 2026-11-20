@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Agenda | ABCPB</title>
+  <meta name="description" content="Agenda de eventos da Associação Batista do Cariri Paraibano: assembleias, congressos, encontros e cultos.">
+  <link rel="icon" href="assets/img/logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800&family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body data-pagina="agenda">
+  <div id="topo"></div>
+
+  <main>
+    <section class="pagina-topo">
+      <div class="container">
+        <div class="migalhas"><a href="index.html">Início</a> / Agenda</div>
+        <h1>Agenda</h1>
+        <p>Assembleias, congressos, encontros e cultos da associação. Participe!</p>
+      </div>
+    </section>
+
+    <section class="secao">
+      <div class="container" style="max-width:900px">
+        <div class="secao-titulo" style="margin-bottom:28px"><span class="sobretitulo">Calendário</span><h2>Próximos eventos</h2></div>
+        <div data-eventos data-passados></div>
+      </div>
+    </section>
+  </main>
+
+  <div id="rodape"></div>
+
+  <script src="dados/config.js"></script>
+  <script src="dados/noticias.js"></script>
+  <script src="dados/eventos.js"></script>
+  <script src="dados/igrejas.js"></script>
+  <script src="dados/missoes.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
