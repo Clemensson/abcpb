@@ -200,8 +200,12 @@
     titulo.textContent = n.titulo;
     info.textContent = dataLonga(n.data) + (n.categoria ? " · " + n.categoria : "");
     var paragrafos = (Array.isArray(n.texto) ? n.texto : [n.texto || n.resumo]);
+    var fotos = (n.galeria && n.galeria.length) ? n.galeria : (n.imagem ? [n.imagem] : []);
     alvo.innerHTML =
-      (n.imagem ? '<div class="capa"><img src="' + esc(n.imagem) + '" alt=""></div>' : "") +
+      (fotos.length === 1 ? '<div class="capa"><img src="' + esc(fotos[0]) + '" alt=""></div>' : "") +
+      (fotos.length > 1 ? '<div class="galeria">' + fotos.map(function (f) {
+        return '<a href="' + esc(f) + '" target="_blank" rel="noopener"><img src="' + esc(f) + '" alt="Foto: ' + esc(n.titulo) + '" loading="lazy"></a>';
+      }).join("") + "</div>" : "") +
       '<div class="texto-corrido">' + paragrafos.map(function (p) { return "<p>" + esc(p) + "</p>"; }).join("") + "</div>" +
       (n.link ? '<a class="btn btn-terracota" href="' + esc(n.link) + '" target="_blank" rel="noopener">Ver publicação original</a><br>' : "") +
       '<a class="voltar" href="noticias.html">← Voltar para notícias</a>';
