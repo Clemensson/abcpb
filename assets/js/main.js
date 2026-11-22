@@ -203,6 +203,7 @@
     alvo.innerHTML =
       (n.imagem ? '<div class="capa"><img src="' + esc(n.imagem) + '" alt=""></div>' : "") +
       '<div class="texto-corrido">' + paragrafos.map(function (p) { return "<p>" + esc(p) + "</p>"; }).join("") + "</div>" +
+      (n.link ? '<a class="btn btn-terracota" href="' + esc(n.link) + '" target="_blank" rel="noopener">Ver publicação original</a><br>' : "") +
       '<a class="voltar" href="noticias.html">← Voltar para notícias</a>';
   }
 

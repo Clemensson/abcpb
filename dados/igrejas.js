@@ -14,7 +14,7 @@ window.IGREJAS = [
     cultos: "Dom 9h (EBD) e 19h · Qua 19h30",
     telefone: "",
     mapa: "",
-    instagram: ""
+    instagram: "https://www.instagram.com/pibmonteiro/"
   },
   {
     nome: "Igreja Batista em Sumé",

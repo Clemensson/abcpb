@@ -8,8 +8,22 @@
    imagem:    caminho da foto (ex.: "assets/img/noticias/foto.jpg")
               ou "" para usar a imagem padrão
    texto:     cada parágrafo é um item da lista, entre aspas
+   link:      (opcional) endereço da publicação original, ex.: Instagram
    ============================================================= */
 window.NOTICIAS = [
+  {
+    id: "pib-monteiro-40-anos",
+    titulo: "PIB Monteiro celebra 40 anos de história",
+    data: "2026-10-13",
+    categoria: "Igrejas",
+    imagem: "",
+    resumo: "A Primeira Igreja Batista em Monteiro celebrou seus 40 anos com dias de culto e gratidão a Deus.",
+    texto: [
+      "A Primeira Igreja Batista em Monteiro celebrou seus 40 anos de organização. Foram dias abençoados de comemoração, marcados pela gratidão a Deus por tudo o que Ele realizou ao longo dessas quatro décadas.",
+      "A Associação Batista do Cariri Paraibano se alegra com a PIB Monteiro e agradece a Deus pelo testemunho da igreja no Cariri paraibano."
+    ],
+    link: "https://www.instagram.com/p/Decbnu_HflT/"
+  },
   {
     id: "assembleia-anual-2026",
     titulo: "Assembleia anual reúne igrejas do Cariri em Monteiro",
